@@ -12,7 +12,9 @@ from keras.utils import multi_gpu_model
 from models.densenet121 import get_model
 from utility import split_data, get_sample_counts, create_symlink
 from weights import get_class_weights
+from PIL import ImageFile
 
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def main():
     # parser config
