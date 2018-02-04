@@ -8,6 +8,8 @@ from models.densenet121 import get_model
 from utility import get_sample_counts
 from keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import roc_auc_score
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
 def main():
