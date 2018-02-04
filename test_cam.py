@@ -69,7 +69,7 @@ def main():
         csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         csvwriter.writerow(['ID'] + class_names)
         for i in range(len(fx_prob)):
-            csvwriter.writerow([i] + class_prob[:, i])
+            csvwriter.writerow([i] + fx_prob[:, i])
             xi_orig = 255*x_orig[i, :]
             cv2.imwrite(f"imgdir/orig_image_{i}.jpg", np.uint8(xi_orig))
             predicted_class = 0 if fx_prob[i] > nm_prob[i] else 1
