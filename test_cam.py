@@ -63,13 +63,14 @@ def main():
     print("** perform grad cam **")
     print("y_hat = {}".format(y_hat))
     print("shape y_hat = {}".format(np.shape(y_hat)))
-    fx_prob = [y_hat[i][:, 0] for i, class_name in enumerate(class_names)]
+    class_prob = [y_hat[i][:, 0] for i, class_name in enumerate(class_names)]
+    print("shape class_prob = {}".format(np.shape(class_prob)))
     print("fx_prob = {}".format(np.shape(fx_prob)))
     with open('predicted_class.csv', 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         csvwriter.writerow(['ID'] + class_names)
         for i in range(len(fx_prob)):
-            csvwriter.writerow([i] + fx_prob[:, i])
+            csvwriter.writerow([i] + class_prob[:, i])
             xi_orig = 255*x_orig[i, :]
             cv2.imwrite(f"imgdir/orig_image_{i}.jpg", np.uint8(xi_orig))
             predicted_class = 0 if fx_prob[i] > nm_prob[i] else 1
