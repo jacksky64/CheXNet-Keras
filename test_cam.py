@@ -62,7 +62,7 @@ def main():
     print("** perform grad cam **")
     print("y_hat = {}".format(y_hat))
     print("shape y_hat = {}".format(np.shape(y_hat)))
-    class_prob = [y_hat[i][:, 0] for i, class_name in enumerate(class_names)]
+    fx_prob = [y_hat[i][:, 0] for i, class_name in enumerate(class_names)]
     print("fx_prob = {}".format(np.shape(fx_prob)))
     with open('predicted_class.csv', 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
