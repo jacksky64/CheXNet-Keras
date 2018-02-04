@@ -65,7 +65,7 @@ def main():
     print("shape y_hat = {}".format(np.shape(y_hat)))
     class_prob = [y_hat[i][:, 0] for i, class_name in enumerate(class_names)]
     print("shape class_prob = {}".format(np.shape(class_prob)))
-    print("shape x = {}".format(np.shape(x)))
+    print("shape y = {}".format(np.shape(y)))
     fx_prob = [x[i][:, 0] for i, class_name in enumerate(class_names)]
     print("fx_prob = {}".format(np.shape(fx_prob)))
     with open('predicted_class.csv', 'w', newline='') as csvfile:
