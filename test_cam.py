@@ -9,6 +9,7 @@ from utility import get_sample_counts
 from keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import roc_auc_score
 from PIL import ImageFile
+import csv
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
