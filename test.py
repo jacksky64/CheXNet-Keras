@@ -106,6 +106,7 @@ def main():
         model.load_weights(weights_path)
 
     print("** make prediction **")
+    model.compile('sgd','mse')
     y_hat = model.predict(x, verbose=1)
 
     test_log_path = os.path.join(output_dir, "test.log")
