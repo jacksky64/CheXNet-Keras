@@ -12,6 +12,9 @@ from callback import load_generator_data
 from generator import custom_image_generator
 from models.densenet121 import get_model
 from utility import get_sample_counts
+from PIL import ImageFile
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
 def grad_cam(model, class_names, y, y_hat, x_model, x_orig):
