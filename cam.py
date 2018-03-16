@@ -6,6 +6,9 @@ from configparser import ConfigParser
 from generator import AugmentedImageSequence
 from models.keras import ModelFactory
 from keras import backend as kb
+from PIL import ImageFile
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 
 def get_output_layer(model, layer_name):
