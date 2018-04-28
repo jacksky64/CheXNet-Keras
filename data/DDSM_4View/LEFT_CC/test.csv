@@ -1,0 +1,16 @@
+Image Index,Patient ID,Finding Labels,benign_calcification,benign_mass,cancer_calcification,cancer_mass,normal
+A_0702_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0206_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_2042_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0203_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0234_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0277_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0137_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0359_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0474_1.LEFT_CC.png,0,normal,0,0,0,0,1
+B_3050_1.LEFT_CC.png,0,normal,0,0,0,0,1
+B_3648_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0046_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0240_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_1615_1.LEFT_CC.png,0,normal,0,0,0,0,1
+A_0361_1.LEFT_CC.png,0,normal,0,0,0,0,1
