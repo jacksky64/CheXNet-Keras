@@ -18,7 +18,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 def main():
     # parser config
-    config_file = "./sample_config.ini"
+    config_file = "./chexnet_config.ini"
     cp = ConfigParser()
     cp.read(config_file)
 
